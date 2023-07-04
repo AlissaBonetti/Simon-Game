@@ -1,0 +1,101 @@
+body {
+   background-color: #F8F6F4;
+   display: flex;
+   height: auto;
+   justify-content: center;
+   align-items: center start;
+
+}
+
+.wrong-answer {
+    background-color: #CD1818;
+}
+
+#green {
+    color: #00DFA2;
+}
+
+#red {
+    color:#FF1E1E;
+    grid-row: span 2;
+}
+
+#yellow {
+    color: #FFFF00;
+}
+
+#blue {
+    color: #0079FF;
+    grid-row:span 2;
+}
+
+.fa-solid{
+    font-size: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simon-buttons {  
+    display: grid;
+    gap:.5rem;
+    grid-template-columns: repeat(3,13rem);
+    grid-template-rows: 4rem 18rem 18rem;    
+}
+
+.title {
+    grid-column:span 3;
+    color: black;
+    font-family: 'DotGothic16', sans-serif;
+    letter-spacing: .25rem;
+    font-size: 2.7rem;
+    text-align: center;
+    user-select: none;
+    margin:2rem 0 0;
+}
+
+.opacity{
+    opacity: 50%;
+}
+
+@media (max-width: 670px) {
+    .title{
+        font-size: 2rem;
+    }
+    .fa-solid{
+        font-size: 20rem;
+    }
+    .simon-buttons{
+        gap:.3rem;
+        grid-template-columns: repeat(3,10rem);
+        grid-template-rows: 4rem 13rem 13rem;   
+    }
+}
+
+@media (max-width:515px) {
+    .title{
+        font-size: 1.5rem;
+    }
+    .fa-solid{
+        font-size: 17rem;
+    }
+    .simon-buttons{
+        gap:.3rem;
+        grid-template-columns: repeat(3,8rem);
+        grid-template-rows: 6rem 10rem 10rem;   
+    }
+}
+
+@media (max-width:400px) {
+    .title{
+        font-size: 1rem;
+    }
+    .fa-solid{
+        font-size: 15rem;
+    }
+    .simon-buttons{
+        gap:.3rem;
+        grid-template-columns: repeat(3,6rem);
+        grid-template-rows: 6rem 8rem 8rem;   
+    }
+}
